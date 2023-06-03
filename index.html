@@ -360,6 +360,9 @@ input {
 }
     </style>
     <main>
+	      <audio id="backgroundMusic" autoplay loop>
+    <source src="minecraftloop.mp3" type="audio/mpeg">
+  </audio>
         <!-- profileinfo -->
         <div class="page-wrapper">
             <div class="nav-wrapper">
@@ -403,5 +406,15 @@ input {
              </section>
            </div>
     </main>
+	  <script>
+    // Get the audio element by its ID
+    const audio = document.getElementById("backgroundMusic");
+
+    // Add an event listener for the "load" event
+    window.addEventListener("load", () => {
+      // Play the audio
+      audio.play();
+    });
+  </script>
 </body>
 </html>
